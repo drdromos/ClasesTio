@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" >
+        <form method="post" action="{{ url_for('signup') }}">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">nombre completo</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" name="fullname" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Telefono</label>
+              <input type="number" class="form-control" name="phone">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">edad</label>
+              <input type="number" class="form-control" name="age" >
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+    </div>
+</body>
+</html>
