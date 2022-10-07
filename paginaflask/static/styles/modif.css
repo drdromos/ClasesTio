@@ -10,7 +10,6 @@
   background-color: #404040;
   border-radius: 10px;
   border: solid yellow;
-  height: 500px;
 }
 
 .head {
@@ -18,6 +17,21 @@
   background: yellow;
   font-family: Helvetica;
   width: 100%;
+}
+
+.registro {
+  border: solid orange;
+  background-color: black;
+  color: red;
+  margin-right: auto;
+}
+
+.titulo {
+  border: 1px solid orange;
+  background: purple;
+  color: white;
+  display: flex;
+  margin: auto;
 }
 
 .lateral {
@@ -33,7 +47,11 @@
   background-color: black;
   color: red;
   margin-right: auto;
-  width: 1000px;
+  width: 60vw;
+}
+.productos img {
+  width: 200px;
+  height: 200px;
 }
 
 .caja {
