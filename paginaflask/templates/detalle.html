@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/modif.css') }}">
 </head>
 <body>
-    <h1>ola, este gatito es uno tipo {{nombre}} , duran aprox. {{edad}} </h1>
+
+    <div class="caja">
+
+        <div class="head">
+            <div class="titulo"><h1 >Gato {{nombre}}</h1></div>
+             </div>
+
+        <div class="lateral"> ERROREANDO
+             </div>
+
+        <div class="productos">
+            <p>Los gatos de raza "{{nombre}}" son generalmente de personalidad {{personalidad}} , se alimentan de {{alimento}} y estos generalmente sufren de {{salud}}</p>
+
+        </div>
+        
+    </div>
 </body>
 </html>

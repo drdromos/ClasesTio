@@ -17,6 +17,7 @@
   background: yellow;
   font-family: Helvetica;
   width: 100%;
+  text-align: center;
 }
 
 .registro {
@@ -32,6 +33,7 @@
   color: white;
   display: flex;
   margin: auto;
+  text-align: center;
 }
 
 .lateral {
@@ -44,14 +46,18 @@
 
 .productos {
   border: solid orange;
-  background-color: black;
-  color: red;
+  background-color: red;
+  color: white;
+  font-size: 30px;
   margin-right: auto;
-  width: 60vw;
+  width: 70vw;
 }
 .productos img {
-  width: 200px;
-  height: 200px;
+  width: 450px;
+  height: 250px;
+  margin-left: -10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .caja {
@@ -61,6 +67,14 @@
   justify-content: space-around;
   align-items: flex-start;
   align-content: flex-start;
+}
+
+.col {
+  border: solid white;
+  display: inline-block;
+  width: 460px;
+  text-align: center;
+  margin: auto;
 }
 
 /*# sourceMappingURL=modif.css.map */

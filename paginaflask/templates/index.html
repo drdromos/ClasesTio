@@ -18,11 +18,16 @@
         <div class="lateral"> ERROREANDO
              </div>
 
-        <div class="productos row row-cols-3">
-            <div class="col"><a href="{{ url_for('detalle', name='gatitoblanco' , age=33) }}"><img src="/static/img/gatitoblanco.jpeg" alt="cabeza de ladrillo"></a></div>
-            <div class="col"><img src="/static/img/gatitogris.jpeg" alt=""></div>
-            <div class="col"><img src="/static/img/gatitonaranjo.jpg" alt=""></div>
-            <div class="col"><img src="/static/img/gatoladron.jpeg" alt=""></div>
+        <div class="productos">
+            <div class="img row row-cols-2">
+                <div class="col"><a href="{{ url_for('detalle', name='Maine Coon' , health='miocardiopatía hipertrófica' , food='carne' , personality='dulce, juguetona y amistosa') }}"><img src="/static/img/mainecoon.jpg" alt="maine coon"></a><p> Presiona la imagen para ver info de los Maine Coon</p></div>
+                <div class="col"><a href="{{ url_for('detalle', name='Abisino' , health='cancer, como linfoma y algunos tumores intestinales' , food='carne' , personality='tranquila, pero les gusta demandar la atencion de sus compañeros humananos') }}"><img src="/static/img/balinese.jpg" alt="balines"></a><p> Presiona la imagen para ver info del gato Balines</p></div>
+                <div class="col"><a href="{{ url_for('detalle', name='Bengalí' , health='miocardiopatía hipertrófica, aunque realmente no se describen muchos trastornos hereditarios' , food='carne' , personality='segura y confiada, además de ser muy cariñosos') }}"><img src="/static/img/bengali.jpg" alt=""></a><p> Presiona la imagen para ver info del gato Bengalí </p></div>
+                <div class="col"><a href="{{ url_for('detalle', name='Azul ruso' , health='enfermedades parasitarias o infecciosas, como el Sida felino, Giardiasis, Clamidia, etc ' , food='carne' , personality='callada y sensible, además de timidos y reservados, pero son fieles a su dueño') }}"><img src="/static/img/azulruso.jpg" alt=""></a><p> Presiona la imagen para ver info del gato Azul Ruso </p></div>
+
+            </div>
+            
+    
         </div>
         <div class="registro"><a  href="{{ url_for('login') }}"> apreta puto</a></div>
         

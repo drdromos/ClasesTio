@@ -20,10 +20,10 @@ def signup():
         return "algo está mal"
     return render_template('signup.html')
 
-@app.route("/detalle/<string:name>/<int:age>" , methods=["GET"])
-def detalle(name:str , age:int):
+@app.route("/detalle/<string:name>/<string:health>/<string:food>/<string:personality>" , methods=["GET"])
+def detalle(name:str , health:str , food:str , personality:str):
     if request.method == "GET":
-        return render_template('detalle.html' , nombre=name , edad=age)
+        return render_template('detalle.html' , nombre=name , salud=health , alimento=food , personalidad=personality)
 
 if __name__ == "__main__":   
     app.run(host='0.0.0.0')
